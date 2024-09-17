@@ -1,0 +1,320 @@
+/* General Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+  font-weight: 400; /* Normal font weight */
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Full width for responsiveness */
+  max-width: 960px; /* Max width for layout consistency */
+  margin: 0 auto; /* Center the content */
+  background-color: #f1faee; /* Light background for contrast */
+}
+
+/* Header Styling */
+header {
+  margin-top: 15px;
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Space out logo and navbar */
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px; /* Padding around the header */
+  background-color: #457b9d; /* Background color for the header */
+  border-radius: 10px; /* Rounded corners for the header */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow around the header */
+  transition: box-shadow 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Header Hover Animation */
+header:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Logo Styling */
+.logo {
+  width: 100px; /* Adjust width of logo */
+  transition: transform 0.3s, filter 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Logo Hover Animation */
+.logo:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  filter: brightness(1.2); /* Slightly brighten on hover */
+}
+
+/* Navbar Styling */
+nav#categories {
+  border-radius: 5px;
+  background-color: #a8dadc; /* Slightly lighter dark background for the navbar */
+  height: 50px; /* Set a smaller height for the navbar */
+  display: flex; /* Flexbox layout for navbar items */
+  align-items: center; /* Center items vertically */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Navbar Hover Animation */
+nav#categories:hover {
+  background-color: #90e0ef; /* Lighter background color on hover */
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Navbar List Styling */
+nav#categories ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Flexbox for horizontal layout */
+  height: 100%; /* Make sure the list items fill the height of the navbar */
+}
+
+/* Navbar List Items */
+nav#categories ul li {
+  margin: 0 15px; /* Spacing between items */
+  transition: transform 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Navbar List Item Hover Animation */
+nav#categories ul li:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Navbar Links */
+nav#categories ul li a {
+  color: #1d3557; /* White text color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 16px; /* Font size for links */
+  font-weight: 600; /* Bold weight for emphasis */
+  line-height: 50px; /* Align text vertically within the navbar */
+  transition: color 0.3s, text-decoration 0.3s, transform 0.3s; /* Smooth transitions for hover effects */
+}
+
+/* Navbar Link Hover Animation */
+nav#categories ul li a:hover {
+  color: #f1faee; /* Color on hover */
+  text-decoration: underline; /* Underline on hover */
+  transform: translateY(-2px); /* Slightly lift on hover */
+}
+
+/* Heading Styling */
+h1 {
+  color: #1d3557; /* Darker color for readability */
+  text-align: center; /* Center align the heading */
+  margin: 20px 0; /* Spacing around the heading */
+  font-size: 28px; /* Larger font size for prominence */
+  font-weight: 600; /* Bold weight for emphasis */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Heading Hover Animation */
+h1:hover {
+  color: #007bff; /* Color change on hover */
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Product Grid Styling */
+#productgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Fixed four-column layout */
+  gap: 20px; /* Spacing between items */
+  justify-content: center; /* Center grid items */
+  padding: 10px; /* Padding around the grid */
+}
+
+/* Product Card Styling */
+.product {
+  background-color: #fff; /* Clean background */
+  border-radius: 15px; /* Rounded corners */
+  text-align: center;
+  overflow: hidden; /* Hide overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Smooth transition effects */
+  position: relative; /* Positioning context for pseudo-elements */
+  padding: 10px; /* Padding inside the card */
+  z-index: 0; /* Ensure product card is clickable */
+}
+
+/* Product Card Hover Animation */
+.product:hover {
+  transform: translateY(-8px); /* Slight lift on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  background-color: #f9f9f9; /* Subtle background color change */
+}
+
+/* Product Image Styling */
+.product img {
+  display: block; /* Ensure image is a block element */
+  max-width: 100%; /* Prevent image from overflowing */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image horizontally */
+  border: 5px solid #ddd; /* Light gray frame around the image */
+  border-radius: 10px; /* Rounded corners for the frame */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the frame */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for image scaling */
+}
+
+/* Product Image Hover Animation */
+.product img:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Product Link Styling */
+.product a {
+  display: block;
+  font-size: 18px; /* Larger font size */
+  font-weight: 600; /* Slightly bolder text */
+  color: #333;
+  text-decoration: none;
+  margin: 15px 0; /* Spacing around text */
+  transition: color 0.3s, transform 0.3s; /* Smooth color and transform transition */
+  z-index: 1; /* Ensure link text is clickable */
+}
+
+/* Product Link Hover Animation */
+.product a:hover {
+  color: #007bff; /* Color change on hover */
+  transform: translateY(-2px); /* Slightly lift on hover */
+}
+
+/* Product Description Styling */
+.product p {
+  font-size: 16px; /* Larger font size */
+  color: #555;
+  margin: 0; /* Remove default margin */
+  padding: 0 15px 15px; /* Padding for spacing */
+}
+
+/* Optional: Add a pseudo-element for additional styling */
+.product::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1); /* Light overlay for hover effect */
+  transition: opacity 0.3s; /* Smooth transition for overlay */
+  opacity: 0;
+  z-index: -1; /* Ensure overlay is behind content */
+}
+
+/* Product Hover Overlay Animation */
+.product:hover::after {
+  opacity: 1; /* Show overlay on hover */
+}
+
+/* Search Form Styling */
+.search-form {
+  display: flex; /* Flexbox layout for aligning elements */
+  align-items: center; /* Center items vertically */
+  margin: 20px 0; /* Space above and below the form */
+  padding: 8px; /* Padding inside the form */
+  background-color: #fff; /* White background for contrast */
+  border-radius: 8px; /* Rounded corners for the form */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow around the form */
+  max-width: 500px; /* Limit form width for better layout */
+  margin: 20px auto; /* Center form horizontally */
+  transition: box-shadow 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Search Form Hover Animation */
+.search-form:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Input Field Styling */
+.search-form input[type="text"] {
+  flex: 1; /* Allow input to take available space */
+  padding: 8px 12px; /* Padding inside the input */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 14px; /* Smaller font size for a compact look */
+  outline: none; /* Remove default focus outline */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus effects */
+}
+
+/* Input Field Focus Styling */
+.search-form input[type="text"]:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.2); /* Add a light shadow on focus */
+}
+
+/* Button Styling */
+.search-form button {
+  padding: 8px 15px; /* Padding inside the button */
+  margin-left: 8px; /* Space between input and button */
+  background-color: #a8dadc; /* Blue background color */
+  color: #1d3557; /* White text color */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 14px; /* Smaller font size for a compact look */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Button Hover Animation */
+.search-form button:hover {
+  background-color: #f1faee; /* Darker background color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+
+
+
+
+
+
+/* Main Block Styling */
+.product-container {
+  max-width: 800px; /* Limit maximum width */
+  margin: 20px auto; /* Center container horizontally */
+  padding: 20px; /* Padding inside container */
+  background-color: #fff; /* White background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around container */
+  text-align: center; /* Center align text */
+}
+
+/* Product Image Styling */
+.product-container img {
+  border-radius: 8px; /* Rounded corners for the image */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for the image */
+  max-width: 100%; /* Ensure image fits within container */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Product Image Hover Animation */
+.product-container img:hover {
+  transform: scale(1.05); /* Slightly enlarge image on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Product Description Styling */
+.product-container p {
+  color: #333; /* Dark text color for readability */
+  font-size: 16px; /* Font size for text */
+  margin: 15px 0; /* Spacing above and below paragraphs */
+}
+
+/* Price Styling */
+.product-container .price {
+  font-size: 20px; /* Larger font size for price */
+  font-weight: 600; /* Bold weight for emphasis */
+  color: #007bff; /* Blue color for price */
+}
+
+/* Volume Styling */
+.product-container .volume {
+  font-size: 16px; /* Font size for volume */
+  color: #555; /* Gray color for volume */
+}
+
+/* Add a card effect around the description */
+.product-description {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow around description */
+}
